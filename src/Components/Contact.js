@@ -15,7 +15,7 @@ const Contact = () => {
             <div className="contact-content">
                 <div className="contact-stuff">
                     <img className="contact-image" src= {github} alt=""></img>
-                    <h3 className="contact-h3">@acandan2</h3>
+                    <h3 className="contact-h3">@acandan1</h3>
                 </div>
                 <div className="contact-stuff">
                     <img className="contact-image" src= {email} alt=""></img>
