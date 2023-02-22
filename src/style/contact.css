@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.contact-stuff {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-image {
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    .contact-h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 481px) { 
+    .contact-h3 {
+        font-size: 18px;
+    }
+}

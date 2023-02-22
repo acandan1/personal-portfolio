@@ -1,0 +1,132 @@
+.projects {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.projects-header {
+    margin-bottom: 50px;
+}
+
+#projects-title {
+    font-size: 50px;
+}
+
+.project-paragraph {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 25px;
+}
+
+.projects-lines {
+    background-color: white;
+}
+
+.projects-content {
+    padding-right: 10vw;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.project-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.project {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.project-links {
+    display: flex;
+    gap: 30px;
+}
+
+.project-name {
+    color: crimson;
+}
+
+.project-button.navigation-button > a {
+    color: black;
+}
+
+.project-button.navigation-button:hover {
+    background-color: crimson;
+    transform: translateY(-7px);
+    transition-duration: 0.2s;
+}
+
+@media (max-width: 480px) {
+    #projects-title {
+        font-size: 30px;
+    }
+    .projects-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project-paragraph {
+        font-size: 15px;
+    }
+
+    .project-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 481px) {
+    #projects-title {
+        font-size: 40px;
+    }
+    .projects-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .project-paragraph {
+        font-size: 20px;
+    }
+
+    .project-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .project {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+}

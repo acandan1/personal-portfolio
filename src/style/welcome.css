@@ -1,0 +1,117 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-color: black;
+
+    animation-duration: 2.7s;
+    animation-name: change-background;
+    animation-iteration-count: 1;
+    color: white;
+}
+
+@keyframes change-background {
+    from {
+        background-color: white;
+        color: black;
+    }
+
+
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+#my-name {
+    color: crimson;
+    font-weight: bold;
+}
+
+#full-stack {
+    color: rgb(26, 255, 179);
+    font-weight: bold;
+    
+}
+
+.hero-paragraph {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px;
+}
+
+.hero-paragraph:hover {
+    transform: translateY(-20px);
+    -webkit-box-shadow:0 0 10rem rgb(26, 255, 179); 
+    -moz-box-shadow: 0 0 10rem rgb(26, 255, 179);
+    box-shadow:0 0 10rem rgb(26, 255, 179);
+}
+
+#welcome-1 {
+    animation-duration: 1s;
+    animation-name: welcome-animation-1;
+    animation-iteration-count: 1;
+}
+
+@keyframes welcome-animation-1 {
+    from {
+        transform: translate(30vw, -50vh) rotate(50deg);
+    }
+
+    to {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+#welcome-2 {
+    animation-duration: 2s;
+    animation-name: welcome-animation-2;
+    animation-iteration-count: 1;
+}
+
+@keyframes welcome-animation-2 {
+    from {
+        transform: rotate(-359deg) translate(-30vw, -30vh);
+    }
+
+    to {
+        transform: rotate(0) translate(0, 0);
+    }
+}
+
+#welcome-3 {
+    animation-duration: 3s;
+    animation-name: welcome-animation-3;
+    animation-iteration-count: 1;
+}
+
+@keyframes welcome-animation-3 {
+    from {
+        transform: rotate(359deg) translateY(50vh);
+    }
+
+    80% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    90% {
+        transform: translateY(-35vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) { 
+    .hero-paragraph {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 481px) {
+    .hero-paragraph {
+        font-size: 35px;
+    }
+}
